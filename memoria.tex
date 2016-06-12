@@ -83,7 +83,7 @@ Trabajo Fin de Grado
 \vspace{2.5cm}
 
 \LARGE
-TÍTULO DEL TRABAJO EN MAYÚSCULAS
+ANÁLISIS Y BÚSQUEDA DE IDIOMS PROCEDENTES DE REPOSITORIOS ESCRITOS EN PYTHON
 
 \vspace{4cm}
 
@@ -111,7 +111,7 @@ Tutor : Dr. Gregorio Robles
 
 \vspace{1cm}
 \large
-FIXME: Título
+ANÁLISIS Y BÚSQUEDA DE IDIOMS PROCEDENTES DE REPOSITORIOS ESCRITOS EN PYTHON
 
 \vspace{1cm}
 \large
@@ -164,7 +164,7 @@ mis padres, mi hermana y mi pareja}
 %\addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
 \markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
 
-Con este trabajo se pone fin a una gran etapa en mi vida. Recuerdo momentos de incertidumbre, de máximo extrés, de olvidarme de todo lo que me rodeaba dedicándome exclusivamente a estudiar, no obstante siempre me compensó. Recuerdo esos grandes momentos de felicidad cuando en el Portal Servicios se reflejaba una buena nota, fruto del esfuerzo y disfrute en algunas asignaturas o algún aprobado que sabía a la máxima calificación.
+Con este trabajo se pone fin a una gran etapa en mi vida. Recuerdo momentos de incertidumbre, de máximo estrés, de olvidarme de todo lo que me rodeaba dedicándome exclusivamente a estudiar, no obstante siempre me compensó. Recuerdo esos grandes momentos de felicidad cuando en el Portal Servicios se reflejaba una buena nota, fruto del esfuerzo y disfrute en algunas asignaturas o algún aprobado que sabía a la máxima calificación.
 
 Pero en todo este tiempo no he estado solo, he estado acompañado de grandes personas a las que no puedo dejar de agradecer su constante apoyo.
 
@@ -573,7 +573,7 @@ Debido a las restricciones de la API de GitHub, que limita a 5.000 peticiones au
 
 GHTorrent es un proyecto de software libre que permite obtener toda la información de los repositorios de GitHub evitando las restricciones de 5.000 peticiones por hora. Para ello nos descargamos la información que ofrecen de manera comprimida desde su web.
 
-GHTorrent, además de bases de datos en MongoDB y MySQL, ofrece ficheros CSV, documentos en los cuales la información se muestra separada por comas que representarían las columnas de una tabla. Uno de esos ficheros mostraba información sobre los nombres de todos los repositorios en GitHub, su url, el lenguaje principal, si era \textit{fork} de otro repositorio y algunos campos más, como por ejemplo, si había sido eliminado ya.
+GHTorrent, además de bases de datos en MongoDB y MySQL, ofrece ficheros CSV, documentos en los cuales la información se muestra separada por comas que representarían las columnas de una tabla. Uno de esos ficheros mostraba información sobre los nombres de todos los repositorios en GitHub, su URL, el lenguaje principal, si era \textit{fork} de otro repositorio y algunos campos más, como por ejemplo, si había sido eliminado ya.
 
 A partir de dicho fichero, se procedió al filtrado de toda la información que contenían, obteniendo únicamente, todos aquellos proyectos que estuvieran principalmente escritos en Python, que no fueran fruto de un \textit{fork} de otro repositorio y además, no hubieran sido eliminados ya.
 
@@ -597,7 +597,7 @@ Los resultados de cada repositorio se almacenaron en documentos independientes. 
 
 Debido a que el fichero creado únicamente localizaba los \textit{idioms} dentro de un fichero, se realizó un segundo programa que importaba a éste como un módulo y se utilizaban sus funciones.
 
-En este nuevo fichero Python, se hacía necesario la creación de funciones para localizar únicamente los ficheros que fueran Python para analizarlos. Por otro lado se utilizó el módulo PyMongo para conectar con la base de datos Mongodb y facilitar las operaciones.
+En este nuevo fichero Python, se hacía necesaria la creación de funciones para localizar únicamente los ficheros que fueran Python para analizarlos. Por otro lado, se utilizó el módulo PyMongo para conectar con la base de datos MongoDB y facilitar las operaciones.
 
 En esta sección, se encontraron algunos \textit{bugs} del programa principal que fueron resueltos satisfactoriamente en la medida de lo posible. Algunos de los repositorios, no excesivos, contenían un fichero que provocaban una ralentización del análisis debido a su tamaño, pero que en su interior no contenían código Python o elementos que fueran objeto de búsqueda, a pesar de contener la terminación \textit{.py}. Para evitar estos ficheros, se procedió a la realización de un temporizador para detener el análisis de un fichero si se prolongaba de manera excesiva.
 
@@ -611,7 +611,7 @@ Una vez terminó de realizarse la obtención de \textit{idioms}, un proceso lent
 
 Pandas es un paquete permite el estudio de grandes cantidades de datos, facilitando a Python al manejo de los mismos con estructuras mejor optimizadas para mejorar el rendimiento.
 
-Los datos de la búsqueda, que permanecían almacenados en una base de datos MongoDB, suponían una gran cantidad de información para cargarla y manejarls de manera dinámica, por lo tanto, se hizo necesaria una conversión previa de los datos y obtener, de este modo, un fichero CSV.
+Los datos de la búsqueda, que permanecían almacenados en una base de datos MongoDB, suponían una gran cantidad de información para cargarla y manejarla de manera dinámica, por lo tanto, se hizo necesaria una conversión previa de los datos y obtener, de este modo, un fichero CSV.
 
 El hecho de pasar la información de la base de datos a este tipo de formato, supondría ocupar un mayor tamaño, pero permitiría cargarlo con mayor rapidez sobre Pandas, debido a que éste módulo ofrece muchas más facilidades para obtener los datos en este tipo de formato, y por lo tanto. se mejoraría el rendimiento que es más importante frente a la cantidad de memoria usada hoy en día.
 
@@ -831,7 +831,7 @@ No podemos continuar este trabajo sin examinar también si se han alcanzado los 
 En este caso, dichos objetivos constituyen lo que ha sido la estructura y el desarrollo del trabajo, por lo tanto:
 
 \begin{itemize}
-\item Se ha logrado obtener información de los elementos más complejos gracias a un estudio exhaustivo de las distintas fuentes de información que estaban a nuestro alcance (libros, páginas webs, conferencias...). De esta forma, hemos conseguido ampliar nuestros conocimientos, obtener nuevos y especializarnos en este lenguaje de programación.
+\item Se ha logrado obtener información de los elementos más complejos gracias a un estudio exhaustivo de las distintas fuentes de información que estaban a nuestro alcance (libros, páginas web, conferencias...). De esta forma, hemos conseguido ampliar nuestros conocimientos, obtener nuevos y especializarnos en este lenguaje de programación.
 
 \item Hemos conseguido descargar una muestra considerable de repositorios, más de 70.000, con la indispensable ayuda de la plataforma GHTorrent. Todo ello en un periodo de tiempo relativamente reducido, si tomamos de referencia la gran cantidad de almacenamiento ocupado. Además, hemos logrado que con la aplicación creada para este proyecto, se hayan localizado todos los \textit{idioms} existentes en cada repositorio.
 
@@ -959,7 +959,7 @@ squareNumbers = [x*x for x in xrange(100)]
 
 
 
-\item Otro de los elementos \textit{pythonic} que está relacionado con el anterior, son las \textbf{\textit{generators expressions}}. Esta estructura es similar en la manera en la que se crea, pero internamente no es igual, debido a que no se almacena una lista entera en memoria, sino que se generan los resultados cada vez que se pregunta por el siguiente valor. Un ejemplo de su generación puede verse más abajo, en el cual se suman los cuadrados de los números hasta 100, pero que en memoria ocuparía menos que las \textit{list comprehensions} \cite{ramalho2015fluent}.
+\item Otro de los elementos \textit{pythonic} que está relacionado con el anterior, son las \textbf{\textit{generator expressions}}. Esta estructura es similar en la manera en la que se crea, pero internamente no es igual, debido a que no se almacena una lista entera en memoria, sino que se generan los resultados cada vez que se pregunta por el siguiente valor. Un ejemplo de su generación puede verse más abajo, en el cual se suman los cuadrados de los números hasta 100, pero que en memoria ocuparía menos que las \textit{list comprehensions} \cite{ramalho2015fluent}.
 
 \begin{minted}[frame=single]{python}
 # Suma de los cuadrados de los números hasta 100
