@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Cuadrados de los números hasta 100}
+\PYG{n}{squareNumbers} \PYG{o}{=} \PYG{p}{[}\PYG{n}{x}\PYG{o}{*}\PYG{n}{x} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{xrange}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{)]}
+\end{Verbatim}

@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{collections} \PYG{k+kn}{import} \PYG{n}{defaultdict}
+
+\PYG{n}{dict\PYGZus{}def} \PYG{o}{=} \PYG{n}{defaultdict}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{)}
+\PYG{n}{dict\PYGZus{}def}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}foo\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{dict\PYGZus{}def}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}bar\PYGZsq{}}\PYG{p}{]} \PYG{o}{+} \PYG{l+m+mi}{25}
+\PYG{k}{print} \PYG{n}{dict\PYGZus{}def}\PYG{o}{.}\PYG{n}{items}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} [(\PYGZsq{}foo\PYGZsq{}, 25), (\PYGZsq{}bar\PYGZsq{}, 0)]}
+\end{Verbatim}

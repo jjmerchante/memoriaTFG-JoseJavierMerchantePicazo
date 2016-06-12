@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{collections} \PYG{k+kn}{import} \PYG{n}{namedtuple}
+
+\PYG{n}{Point} \PYG{o}{=} \PYG{n}{namedtuple}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Point\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}x y\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{p} \PYG{o}{=} \PYG{n}{Point}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{6}\PYG{p}{)}
+\PYG{k}{print} \PYG{n}{p}\PYG{o}{.}\PYG{n}{x} \PYG{c+c1}{\PYGZsh{} 5}
+\PYG{k}{print} \PYG{n}{p}\PYG{o}{.}\PYG{n}{y} \PYG{c+c1}{\PYGZsh{} 6}
+\end{Verbatim}

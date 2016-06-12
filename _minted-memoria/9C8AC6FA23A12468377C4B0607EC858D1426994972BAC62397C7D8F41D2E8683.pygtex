@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Suma de los cuadrados de los números hasta 100}
+\PYG{n}{sumSquareNumbers} \PYG{o}{=} \PYG{n+nb}{sum}\PYG{p}{(}\PYG{n}{x}\PYG{o}{**}\PYG{l+m+mi}{2} \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n+nb}{xrange}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{))}
+\end{Verbatim}

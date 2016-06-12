@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k}{for} \PYG{n}{item} \PYG{o+ow}{in} \PYG{n+nb}{list}\PYG{p}{:}
+        \PYG{k}{print} \PYG{n}{item}
+\end{Verbatim}

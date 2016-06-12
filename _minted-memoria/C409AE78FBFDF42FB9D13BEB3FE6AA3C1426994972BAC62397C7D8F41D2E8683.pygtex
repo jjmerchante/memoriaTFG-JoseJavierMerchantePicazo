@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from} \PYG{n+nn}{collections} \PYG{k+kn}{import} \PYG{n}{OrderedDict}
+
+\PYG{n}{d} \PYG{o}{=} \PYG{n}{OrderedDict}\PYG{p}{()}
+\PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}A\PYGZsq{}}
+\PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}2\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}B\PYGZsq{}}
+\PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}3\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}C\PYGZsq{}}
+\PYG{n}{d}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}4\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}D\PYGZsq{}}
+\PYG{k}{for} \PYG{n}{key}\PYG{p}{,} \PYG{n}{val} \PYG{o+ow}{in} \PYG{n}{d}\PYG{o}{.}\PYG{n}{items}\PYG{p}{():}
+    \PYG{k}{print} \PYG{n}{key} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}:\PYGZsq{}} \PYG{o}{+} \PYG{n}{val} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{} |\PYGZsq{}}\PYG{p}{,}
+\PYG{c+c1}{\PYGZsh{} 1:A | 2:B | 3:C | 4:D |}
+\end{Verbatim}
