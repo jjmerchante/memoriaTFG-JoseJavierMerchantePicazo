@@ -348,7 +348,7 @@ En esta sección se mencionan las tecnologías utilizadas para el desarrollo del
 \section{Python} 
 \label{sec:seccion1}
 
-Python es un lenguaje de programación desarrollado a finales de los 80 y principios de los 90 por Guido van Rossum y publicada la versión 1.0 del código en 1994. Fue creado inspirándose en el lenguaje de programación ABC con todas sus ventajas, pero evitando sus inconvenientes y con la necesidad de crear un lenguaje de scripting. A lo largo de estos años, Python ha estado desarrollándose, obteniéndose nuevas versiones Python 2 o Python 3 que introducen significantes mejoras. 
+Python es un lenguaje de programación desarrollado a finales de los 80 y principios de los 90 por Guido van Rossum, cuya versión 1.0 del código fue publicada en 1994. Fue creado inspirándose en el lenguaje de programación ABC con todas sus ventajas, pero evitando sus inconvenientes y con la necesidad de crear un lenguaje de scripting. A lo largo de estos años, Python ha estado desarrollándose, obteniéndose nuevas versiones Python 2 o Python 3, que introducen significantes mejoras. 
 
 Python es un lenguaje de programación de alto nivel, es interpretado y además interactivo, lo que permite probar pequeños bloques de código antes de introducirlos finalmente en un programa sin la necesidad del usuario tener que compilarlo, pero con el inconveniente de que la ejecución se realiza algo más lenta frente a otros lenguajes que tienen la necesidad de ser compilados antes de su ejecución.
 
@@ -448,7 +448,7 @@ Su versatilidad, rendimiento, escalabilidad, multiplataforma y sencillez al esta
 %%%%%%%%%%%%%%%%%%%%%% PANDAS %%%%%%%%%%%%%%%%%%%%%%
 \section{Pandas} 
 \label{sec:seccion5}
-Python es un lenguaje de programación de alto nivel que ofrece estructuras de datos genéricas. Para el análisis de las mismas, no incluye demasiadas herramientas, por ese motivo, Wes McKinney, comenzó a desarrollar la librería Pandas en 2008 \cite{mckinney2012python}.
+Python es un lenguaje de programación de alto nivel que ofrece estructuras de datos genéricas. Para el análisis de las mismas, no incluye demasiadas herramientas. Por ese motivo, Wes McKinney comenzó a desarrollar la librería Pandas en 2008 \cite{mckinney2012python}.
 
 Pandas\footnote{http://pandas.pydata.org/} es una librería de código abierto basada en Python. Ofrece estructuras de datos rápidas, flexibles y eficientes, diseñadas para la realización de análisis de datos. Para obtener un mayor rendimiento, algunas de las partes están escritas en C o CPython.
 
@@ -597,7 +597,7 @@ Los resultados de cada repositorio se almacenaron en documentos independientes. 
 
 Debido a que el fichero creado únicamente localizaba los \textit{idioms} dentro de un fichero, se realizó un segundo programa que importaba a éste como un módulo y se utilizaban sus funciones.
 
-En este nuevo fichero Python, se hacía necesaria la creación de funciones para localizar únicamente los ficheros que fueran Python para analizarlos. Por otro lado, se utilizó el módulo PyMongo para conectar con la base de datos MongoDB y facilitar las operaciones.
+En este nuevo fichero Python se hacía necesaria la creación de funciones para localizar únicamente los ficheros que fueran Python para analizarlos. Por otro lado, se utilizó el módulo PyMongo para conectar con la base de datos MongoDB y facilitar las operaciones.
 
 En esta sección, se encontraron algunos \textit{bugs} del programa principal que fueron resueltos satisfactoriamente en la medida de lo posible. Algunos de los repositorios, no excesivos, contenían un fichero que provocaban una ralentización del análisis debido a su tamaño, pero que en su interior no contenían código Python o elementos que fueran objeto de búsqueda, a pesar de contener la terminación \textit{.py}. Para evitar estos ficheros, se procedió a la realización de un temporizador para detener el análisis de un fichero si se prolongaba de manera excesiva.
 
@@ -613,7 +613,7 @@ Pandas es un paquete permite el estudio de grandes cantidades de datos, facilita
 
 Los datos de la búsqueda, que permanecían almacenados en una base de datos MongoDB, suponían una gran cantidad de información para cargarla y manejarla de manera dinámica, por lo tanto, se hizo necesaria una conversión previa de los datos y obtener, de este modo, un fichero CSV.
 
-El hecho de pasar la información de la base de datos a este tipo de formato, supondría ocupar un mayor tamaño, pero permitiría cargarlo con mayor rapidez sobre Pandas, debido a que éste módulo ofrece muchas más facilidades para obtener los datos en este tipo de formato, y por lo tanto. se mejoraría el rendimiento que es más importante frente a la cantidad de memoria usada hoy en día.
+El hecho de pasar la información de la base de datos a este tipo de formato, supondría ocupar un mayor tamaño, pero permitiría cargarlo con mayor rapidez sobre Pandas, debido a que éste módulo ofrece muchas más facilidades para obtener los datos en este tipo de formato, y por lo tanto, se mejoraría el rendimiento que es más importante frente a la cantidad de memoria usada hoy en día.
 
 Con la ayuda de Pandas, se ha logrado analizar toda la información para la extracción de algunas estadísticas, así como conclusiones para una posterior mejora del programa.
 
@@ -628,7 +628,7 @@ Las conclusiones extraídas se mencionarán en el próximo capítulo, se han rea
 \chapter{Resultados}
 \label{chap:results}
 
-Tras la búsqueda de los \textit{idioms} y la obtención de más de 22.000.000 localizados entre más de 70.000 repositorios procedentes de usuarios de GitHub, se ha realizado un extenso análisis sobre todo ellos, obteniendo unos resultados entre los que cabe destacar los mencionados a continuación.
+Tras la búsqueda de los \textit{idioms}, y la identificación de más de 22.000.000 de \textit{idioms} localizados en más de 70.000 repositorios procedentes de usuarios de GitHub, se ha realizado un extenso análisis sobre todo ellos, obteniendo unos resultados entre los que cabe destacar los mencionados a continuación.
 
 
 
@@ -652,11 +652,11 @@ En segundo lugar, se encuentra la documentación, que más que ser un \textit{id
 
 Los siguientes \textit{idioms}, que son los que quizá supongan un mayor interés, están representados en la figura \ref{fig:idiom_rank}.b.
 
-Los \textit{decorators}, son los \textit{idioms} que más se utilizan de la lista. Este tipo de \textit{idioms} permite la llamada a determinados métodos antes o después de la ejecución de una determinada función. Es posible que este elemento avanzado de Python haya sido seleccionado por gran cantidad de usuarios debido a su sencillez al utilizarlos y, de este modo, evitar repetir código.
+Los \textit{decorators} son los \textit{idioms} que más se utilizan de la lista. Este tipo de \textit{idioms} permite la llamada a determinados métodos antes o después de la ejecución de una determinada función. Es posible que este elemento avanzado de Python haya sido seleccionado por gran cantidad de usuarios debido a su sencillez al utilizarlos y, de este modo, evitar repetir código.
 
 A continuación se muestran otros como es el caso de \textit{assert}, una palabra reservada que permite encontrar \textit{bugs} o errores de una manera rápida y sencilla facilitando de esta forma la labor de depuración.
 
-Otro de los \textit{idioms} que se usa con una gran frecuencia, son las \textit{list comprehensions}. Permiten crear listas de una manera concisa lo que atrae a gran cantidad de programadores a usarlas.
+Otro de los \textit{idioms} que se usa con una gran frecuencia son las \textit{list comprehensions}. Permiten crear listas de una manera concisa lo que atrae a gran cantidad de programadores a usarlas.
 
 En cuanto a los denominados \textit{magic methods}, que pasaremos a estudiar más adelante, cabe mencionar que se usan dentro de clases para poder aplicar determinadas funciones a las instancias de los objetos, un elemento de gran utilidad en numerosas ocasiones y es por ello que es ampliamente usado.
 
@@ -705,7 +705,7 @@ Según se muestra en la figura \ref{fig:lines_idioms}.a, una gran cantidad de lo
 \label{fig:lines_idioms}
 \end{figure}
 
-Dado que esta curva resulta singular, sobretodo en las primeras líneas, cuando pasamos a analizar los \textit{idioms} antes de la línea 10, tal y como se puede comprobar en la figura \ref{fig:lines_idioms}.b, se puede determinar que esa bajada es debida a que la mayoría de ficheros y módulos tienen unas líneas de documentación al comienzo, además de las importaciones que usualmente se realizan en esa zona. Esto conlleva a que las línea de código y los \textit{idioms} encontrados, no puedan aparecer en esas líneas, y en consecuencia, se muestren más adelante.
+Dado que esta curva resulta singular, sobre todo en las primeras líneas, cuando pasamos a analizar los \textit{idioms} antes de la línea 10, tal y como se puede comprobar en la figura \ref{fig:lines_idioms}.b, se puede determinar que esa bajada es debida a que la mayoría de ficheros y módulos tienen unas líneas de documentación al comienzo, además de las importaciones que usualmente se realizan en esa zona. Esto conlleva a que las línea de código y los \textit{idioms} encontrados, no puedan aparecer en esas líneas, y en consecuencia, se muestren más adelante.
 
 Tras analizar la causa de la peculiaridad de la curva de esa primera zona, se observa que la cantidad de elementos encontrado posteriormente se mantiene constante, y a continuación, comienza a decrecer de forma exponencial. La causa de esto, es debido a que existe una mayor cantidad de ficheros cortos en extensión, lo que favorece a encontrar más \textit{idioms} en las primeras líneas.
 
@@ -747,7 +747,7 @@ Por último, del tercer grupo destacar por ejemplo \textit{\_\_nonzero\_\_}, que
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Frecuencia de los \textit{idioms} analizados}
-Los repositorios, siguen una curva en la cantidad de \textit{idioms} que se utilizan dentro de ellos que tiene forma de una función exponencial.
+Los repositorios siguen una curva en la cantidad de \textit{idioms} que se utilizan dentro de ellos que tiene forma de una función exponencial.
 
 \begin{figure}[t]
 \centering
@@ -756,7 +756,7 @@ Los repositorios, siguen una curva en la cantidad de \textit{idioms} que se util
 \label{fig:idiom_per_repo}
 \end{figure}
 
-Tal y como se puede observar en la figura \ref{fig:idiom_per_repo}, se puede concluir que la mayor parte de los repositorios tienden a tener pocos \textit{idioms} en sus repositorios, aun que no en todos ellos, debido a que más del 50\% de los repositorios tienen más de 40 \textit{idioms}. Una gran cantidad si se observa que muchos de ellos no tienen muchos ficheros en su interior.
+Tal y como se puede observar en la figura \ref{fig:idiom_per_repo}, se puede concluir que la mayor parte de los repositorios tienden a tener pocos \textit{idioms} en sus repositorios, aunque no en todos ellos, debido a que más del 50\% de los repositorios tienen más de 40 \textit{idioms}. Una gran cantidad si se observa que muchos de ellos no tienen muchos ficheros en su interior.
 
 Calculando la media de \textit{idioms} por repositorio es de 304'52, es decir, que se pueden observar una gran cantidad por cada repositorio. Si se omiten todos aquellos \textit{idioms} que se encuentran en la misma linea como es el caso de las llamadas a funciones con el operador igual, la media disminuye a 270'35, que se mantiene bastante alta.
 
@@ -820,11 +820,11 @@ Como todo buen proyecto es necesario que tras la finalización del mismo, se hay
 
 Con la herramienta creada en este proyecto se ha logrado alcanzar el objetivo principal que persigue ayudar a todos los programadores en su trabajo con Python. Tras este proyecto, el buscar el número de elementos avanzados utilizados por éste ya es posible. Con este programa se puede identificar los \textit{idioms} empleados y aquellos, que en contraposición, no se han usado y quizá podrían haber sido utilizados. De esta manera, se permite al programador aprender nuevos \textit{idioms} y ampliar sus conocimientos en Python.
 
-Así mismo, con esta aplicación, el programador podrá dar respuesta a qué elementos \textit{pythonic} aparecen a largo de sus proyectos, ya que la aplicación identifica en su salida los que han aparecido. No obstante, esta herramienta no está libre de errores, y a pesar de que es bastante exacta, en ocasiones puede no dar el resultado deseado.
+Así mismo, con esta aplicación el programador podrá dar respuesta a qué elementos \textit{pythonic} aparecen a largo de sus proyectos, ya que la aplicación identifica en su salida los que han aparecido. No obstante, esta herramienta no está libre de errores, y a pesar de que es bastante exacta, en ocasiones puede no dar el resultado deseado.
 
-Además, con el programa desarrollado en este proyecto, podemos localizar en qué linea y en qué fichero se encuentra ubicado un determinado \textit{idiom}. Esta labor, permite analizar el código de otros programadores en búsqueda de elementos \textit{pythonic} y de este modo identificar su ubicación acortando el tiempo dedicado a ello.
+Además, con el programa desarrollado en este proyecto podemos localizar en qué linea y en qué fichero se encuentra ubicado un determinado \textit{idiom}. Esta labor permite analizar el código de otros programadores en búsqueda de elementos \textit{pythonic} y de este modo identificar su ubicación acortando el tiempo dedicado a ello.
 
-Del mismo modo, a partir de la localización de los elementos \textit{pythonic}, se puede obtener el autor que ha realizado la última modificación en la línea determinada previamente. Es por ello, que no en todas las ocasiones es posible conocer al autor originario que escribió la línea objeto de estudio, pues si ésta ha sufrido diversas modificaciones, la identidad del mismo no se puede reconocer mediante este programa.
+Del mismo modo, a partir de la localización de los elementos \textit{pythonic} se puede obtener el autor que ha realizado la última modificación en la línea determinada previamente. Es por ello que no en todas las ocasiones es posible conocer al autor originario que escribió la línea objeto de estudio, pues si ésta ha sufrido diversas modificaciones, la identidad del mismo no se puede reconocer mediante este programa.
 
 No podemos continuar este trabajo sin examinar también si se han alcanzado los objetivos específicos.
 
@@ -879,7 +879,7 @@ De este modo quisiera destacar algunas de ellas que he adquirido durante el desa
   
   \item Además, apliqué GHTorrent, un proyecto que me permitió la obtención de grandes cantidades de información acerca de los repositorios procedentes de GitHub. Esta tecnología captó mi atención ya que evitaba las restricciones que GitHub tenía, lo que facilitó mi labor en este proyecto.
   
-  \item Por último, cabe mencionar el uso de la herramienta \LaTeX que me ha permitido el desarrollo de esta memoria.
+  \item Por último, cabe mencionar el uso de la herramienta \LaTeX  que me ha permitido el desarrollo de esta memoria.
 \end{enumerate}
 
 Creo que es bastante importante la aplicación de todos estos conocimientos aprendidos, porque gracias a su utilización en este trabajo, me han permitido conocer de primera mano su funcionamiento y poder servirme de ellos en un futuro.
