@@ -85,8 +85,8 @@ Figure~\ref{fig:idioms_per_repository} shows the number of idioms per repository
 \begin{figure}[ht]
 \centering  
 \includegraphics[width=90mm]{img/idioms_per_repository.png}
-\label{fig:idioms_per_repository}
 \caption{Number of idioms per repository}
+\label{fig:idioms_per_repository}
 \end{figure}
 
 
@@ -95,8 +95,8 @@ Figure~\ref{fig:idiom_ranking} displays the most used idioms by number of reposi
 \begin{figure}[ht]
 \centering
 \includegraphics[width=90mm]{img/num_idiom_repo.png}
-\label{fig:idiom_ranking}
 \caption{Ranking of most frequent Python idioms. Idioms are counted only once per repository.}
+\label{fig:idiom_ranking}
 \end{figure}
 
 Some of the most used and known Python idioms are \emph{magic} methods (methods that are invoked when using a certain syntax, starting and finishing with \_\_, also known as \emph{dunder} from \emph{double under}). These methods provide characteristics that, if implemented, are \emph{transversal} to classes and thus provide a common, defined way for some functionality. An example of this are the \_\_repr\_\_, which returns a printable representation of an object, and \_\_str\_\_, which returns a string containing a nicely printable representation of an object, methods. Figure~\ref{fig:magic_ranking} gives the number of occurrences of each of the most frequent magic methods. This time, the total number of appearances, i.e., a magic method that appears N times in a repository will count N for that repository, is given. The most frequent one, \verb|__init__| (the initializer method, used in Python in a constructor-ish nature), is omitted in the figure as it appears many more times than the rest.
@@ -104,8 +104,8 @@ Some of the most used and known Python idioms are \emph{magic} methods (methods 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=90mm]{img/magic_methods.png}
-\label{fig:magic_ranking}
 \caption{Most common magic methods (\_\_init\_\_ not included).}
+\label{fig:magic_ranking}
 \end{figure}
 
 As can be seen from Figure~\ref{fig:magic_ranking}, \_\_repr\_\_ and \_\_str\_\_ are the two most frequent magic methods. The next ones are: \_\_call\_\_ that implements a function call operator, \_\_iter\_\_ to create iterators, and \_\_unicode\_\_ which in Python 2 returns characters as \_\_str\_\_ really returns bytes\footnote{In Python 3, the \_\_str\_\_ magic method returns characters as in Python's 2 \_\_unicode\_\_, and a new \_\_bytes\_\_() magic method exists.}.
