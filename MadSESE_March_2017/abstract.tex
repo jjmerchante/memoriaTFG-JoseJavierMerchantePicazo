@@ -1,0 +1,73 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{url}
+\hyphenation{op-tical net-works semi-conduc-tor}
+\usepackage{graphicx}
+
+\begin{document}
+\title{From Python to Pythonic}
+
+
+\author{
+\IEEEauthorblockN{José Javier Merchante}
+\IEEEauthorblockA{
+Universidad Rey Juan Carlos\\
+Fuenlabrada, Madrid, Spain\\
+Email: jj.merchante@gmail.com}
+\and
+\IEEEauthorblockN{Gregorio Robles}
+\IEEEauthorblockA{GSyC/LibreSoft\\
+Universidad Rey Juan Carlos\\
+Fuenlabrada, Madrid, Spain\\
+Email: grex@gsyc.urjc.es}
+}
+
+
+\maketitle
+\IEEEpeerreviewmaketitle
+
+\section{Introduction}
+
+Python is an interpreted, interactive, object-oriented programming language. The philosophy of Python emphasized in code readability and write programs in fewer lines of code. Many people choose this language because of the increased productivity it provides.
+
+For this programming language, as for many others, there is always a way to code a task that is more concise, improves its readability, simplicity, and is more optimized. That is what Python community call \emph{Pythonic} code.
+
+In the last years, Python has grown a lot and is one of the most used programming languages, from people introducing in programming to experienced programmers. Many of them are interested in make their code more \emph{Pythonic}. Fact of that is that in stackoverflow is nearly 1 million of questions that has at least one time the word \emph{Pythonic}.
+
+There are plenty of tools that provide some feedback about the code like PEP8, PyFlakes or PyLint, but none of them provide the mastery of Python a programmer has, or the use of some advanced idioms. All of them check the code against some style conventions, that is necessary, but doesn't enrich the code with some idioms that could make it more readable and improve its productivity.
+
+For these reasons, in our research we want to build a tool that study the use of \emph{Pythonic} elements. Identifying which idioms are used in projects, we plan to make some specific learning paths that allow Python programmers to improve their skills and knowledge.
+
+\section{Methodology}
+
+The main goal of the project is to make a web application that given the username, in a first approach of GitHub, analyze all his projects and return some feedback about what idioms is using and give a path to improve his skills.
+
+For that, we began identifying idioms from different sources like books, conferences, web pages, etc. By this way, we have a big list with more than 100 Python idioms of various difficulty levels that includes \textit{magic methods}, \textit{keyword}, \textit{list comprehensions}, etc.
+
+In order to identify idioms in the source code, we scan Python files in projects with a lexer called Pygments\footnote{http://pygments.org/}. For each idiom found, we extract some other information like the location of the idiom or the author in the case of git repositories. With these information we have enough to identify the idioms written by some authors or what lines has been modified by them.
+
+To perform a first study of the use of \emph{Pythonic} elements in real source code, we mined all projects with Python as main language from GitHub using GHTorrent. The output of or tool was redirected to a MongoDB database and analyzed by Pandas software, a library that allow to study big amount of data. The results of this analysis were satisfactory.
+
+We found some patterns 
+
+\section{Current research}
+
+Our current research is based on the following topics:
+\begin{itemize}
+    \item Extend and asses the list of Python idioms. We would like to have a list as complete as possible.
+    \item Identify which idioms are more advanced to classify them in order of complexity, with the assessment of Python developers.
+    \item Classify idioms depending on their relationship.
+    \item Look for Python programmers that write \emph{Pythonic} code and analyze them to see some patterns.
+    \item Make a learning path from beginner to advance in order to give some feedback and help to improve their code.
+    \item Make a web page that allow to introduce new idioms, vote them and sort by importance/difficulty. This new idioms will be added to the main application.
+    \item We would like to create a web-tool to evaluate Python repositories on-the-fly for their idioms and also evaluate their Python skills.
+    \item Study how idioms get propagated and how developers learn them. This could give us an understood on how teach people new idioms and for who are destined each one.
+\end{itemize}
+
+\section{conclusions}
+This project will be focused on evaluating the skills of some programmer, and see if there is any relationship between \textit{pythonic code} and advanced developers or also big projects.
+
+From there we want to make a learning guide that allows beginners and advanced programmers to learn and apply some of the most important idioms in order to obtain all the benefits it provides.
+
+\end{document}
+
+
